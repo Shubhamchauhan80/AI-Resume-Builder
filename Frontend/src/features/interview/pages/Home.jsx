@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react'
 import "../style/home.scss"
-import { useinterview } from '../hooks/useinterview.js'
+import { useInterview } from '../hooks/useInterview.js'
 import { useNavigate } from 'react-router'
 
 const Home = () => {
 
-    const { loading, generateReport,reports } = useinterview()
+    const { loading, generateReport,reports } = useInterview()
     const [ jobDescription, setJobDescription ] = useState("")
     const [ selfDescription, setSelfDescription ] = useState("")
     const resumeInputRef = useRef()
